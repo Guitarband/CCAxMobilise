@@ -204,7 +204,7 @@ export default function Home() {
             </div>
           </div>
           <div className="bg-[#3A3335] flex flex-col items-baseline pt-[6vw] pl-[8vw] pr-[10vw] w-full h-auto text-[#FDF0D5] gap-y-[1vw]">
-            <p className="text-[3vw] font-bold -skew-x-4">The why</p>
+            <p className="text-[3vw] font-bold -skew-x-4">The Why</p>
             <p className="text-[1.6vw] -skew-x-4 pr-[10vw]">
               As the cost of living crisis in Australia continues to worsen, the number of people experiencing homelessness continues to rise.
                The majority of people live with the misconception that homelessness is only people sleeping on the streets, when in fact, that is just the tip of the iceberg.
@@ -212,7 +212,7 @@ export default function Home() {
             </p>
           </div>
           <div className="bg-[#3A3335] flex flex-col items-end text-end pt-[4vw] pl-[8vw] pr-[10vw] w-full h-auto text-[#FDF0D5] gap-y-[1vw]">
-            <p className="text-[3vw] font-bold -skew-x-4">The how</p>
+            <p className="text-[3vw] font-bold -skew-x-4">The How</p>
             <p className="text-[1.6vw] -skew-x-4 pl-[10vw]">
               The bring awareness to this issue, we aim to make homelessness <span className="text-[1.6vw] text-[#F0544F]">everyone&apos;s problem</span>.
                Our approach focuses on a public installation called &apos;The Landmark&apos;, that makes everybody&apos;s day a little more difficult.
