@@ -149,7 +149,18 @@ export default function Home() {
             style={{ width: '100vw', height: '10vh' }}
             />
           <div className="bg-[#3A3335] h-[10vw]"></div>
-          <div className="z-10 flex flex-col p-[5vw] pb-[10vw] w-full h-auto bg-[#FDF0D5] text-[#F0544F] gap-y-[2vw] border-b-2 border-[#F0544F]">
+          <div className="z-10 flex flex-col items-center pt-[8vw] pb-[8vw] w-full h-auto bg-[#FDF0D5] text-[#F0544F] gap-y-[2vw]">
+            <p className="text-[3vw] font-bold -skew-x-4">Help people. Make change.</p>
+            <p className="text-[1.8vw] -skew-x-4">Looking to volunteer, donate, or even learn more about homelessness in Australia?</p>
+            <p className="text-[1.6vw] -skew-x-4">Check out these organisations!</p>
+            <div className="flex flex-row items-center justify-centerw-full gap-[2vw]">
+              <a href="https://wearemobilise.org.au/" className="bg-transparent text-[#D81E5B] border-[#D81E5B] border-2 rounded-4xl pt-[1vw] pb-[1vw] pl-[2vw] pr-[2vw] text-[1.2vw] -skew-x-4 cursor-pointer hover:bg-[#D81E5B] hover:text-[#FDF0D5] transition-all">Visit Mobilise</a>
+              <a href="https://thebigumbrella.org/" className="bg-transparent text-[#D81E5B] border-[#D81E5B] border-2 rounded-4xl pt-[1vw] pb-[1vw] pl-[2vw] pr-[2vw] text-[1.2vw] -skew-x-4 cursor-pointer hover:bg-[#D81E5B] hover:text-[#FDF0D5] transition-all">Visit The Big Umbrella</a>
+              <a href="https://orangesky.org.au/" className="bg-transparent text-[#D81E5B] border-[#D81E5B] border-2 rounded-4xl pt-[1vw] pb-[1vw] pl-[2vw] pr-[2vw] text-[1.2vw] -skew-x-4 cursor-pointer hover:bg-[#D81E5B] hover:text-[#FDF0D5] transition-all">Visit Orange Sky</a>
+              <a href="https://www.streetsidemedics.com.au/" className="bg-transparent text-[#D81E5B] border-[#D81E5B] border-2 rounded-4xl pt-[1vw] pb-[1vw] pl-[2vw] pr-[2vw] text-[1.2vw] -skew-x-4 cursor-pointer hover:bg-[#D81E5B] hover:text-[#FDF0D5] transition-all">Visit Street Side Medics</a>
+            </div>
+          </div>
+          <div className="z-10 flex flex-col p-[5vw] pb-[10vw] w-full h-auto bg-[#FDF0D5] text-[#F0544F] gap-y-[2vw] border-t-2 border-[#F0544F]">
             <p className="text-[2.4vw] font-bold -skew-x-4">Quick Resources</p>
             <div className="flex flex-row items-center justify-center h-[30vw] w-full gap-[5vw]">
               <div className="h-full flex-1/2">
@@ -192,23 +203,24 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="z-10 flex flex-col items-center pt-[8vw] pb-[8vw] w-full h-auto bg-[#FDF0D5] text-[#F0544F] gap-y-[2vw]">
-            <p className="text-[3vw] font-bold -skew-x-4">Help people. Make change.</p>
-            <p className="text-[1.8vw] -skew-x-4">Looking to volunteer, donate, or even learn more about homelessness in Australia?</p>
-            <p className="text-[1.6vw] -skew-x-4">Check out these organisations!</p>
-            <div className="flex flex-row items-center justify-centerw-full gap-[2vw]">
-              <a href="https://wearemobilise.org.au/" className="bg-transparent text-[#D81E5B] border-[#D81E5B] border-2 rounded-4xl pt-[1vw] pb-[1vw] pl-[2vw] pr-[2vw] text-[1.2vw] -skew-x-4 cursor-pointer hover:bg-[#D81E5B] hover:text-[#FDF0D5] transition-all">Visit Mobilise</a>
-              <a href="https://thebigumbrella.org/" className="bg-transparent text-[#D81E5B] border-[#D81E5B] border-2 rounded-4xl pt-[1vw] pb-[1vw] pl-[2vw] pr-[2vw] text-[1.2vw] -skew-x-4 cursor-pointer hover:bg-[#D81E5B] hover:text-[#FDF0D5] transition-all">Visit The Big Umbrella</a>
-              <a href="https://orangesky.org.au/" className="bg-transparent text-[#D81E5B] border-[#D81E5B] border-2 rounded-4xl pt-[1vw] pb-[1vw] pl-[2vw] pr-[2vw] text-[1.2vw] -skew-x-4 cursor-pointer hover:bg-[#D81E5B] hover:text-[#FDF0D5] transition-all">Visit Orange Sky</a>
-              <a href="https://www.streetsidemedics.com.au/" className="bg-transparent text-[#D81E5B] border-[#D81E5B] border-2 rounded-4xl pt-[1vw] pb-[1vw] pl-[2vw] pr-[2vw] text-[1.2vw] -skew-x-4 cursor-pointer hover:bg-[#D81E5B] hover:text-[#FDF0D5] transition-all">Visit Street Side Medics</a>
-            </div>
+          <div className="bg-[#3A3335] flex flex-col items-baseline pt-[6vw] pl-[8vw] pr-[10vw] w-full h-auto text-[#FDF0D5] gap-y-[1vw]">
+            <p className="text-[3vw] font-bold -skew-x-4">The why</p>
+            <p className="text-[1.6vw] -skew-x-4 pr-[10vw]">
+              As the cost of living crisis in Australia continues to worsen, the number of people experiencing homelessness continues to rise.
+               The majority of people live with the misconception that homelessness is only people sleeping on the streets, when in fact, that is just the tip of the iceberg.
+               Homelessness affects <span className="text-[1.6vw] text-[#F0544F]">122 thousand</span> people, only 6% of whom people see and consider homeless.
+            </p>
           </div>
-          <div className="bg-[#3A3335] flex flex-col items-baseline pt-[6vw] pl-[8vw] pr-[10vw] w-full h-auto text-[#FDF0D5] gap-y-[2vw]">
-            <p className="text-[3vw] font-bold -skew-x-4">Who are we?</p>
-            <p className="text-[1.6vw] -skew-x-4">
-              We are a group on the mission of spreading awareness of homelessness in Australia.
-               We commision designs from the local homeless population to create artistic landmarks that are visually interfering for the general populace.
-               Landmarks bring a challenge to cities across Australia, incentivising individuals to donate and learn about the issue to remove the obstructions.
+          <div className="bg-[#3A3335] flex flex-col items-end text-end pt-[4vw] pl-[8vw] pr-[10vw] w-full h-auto text-[#FDF0D5] gap-y-[1vw]">
+            <p className="text-[3vw] font-bold -skew-x-4">The how</p>
+            <p className="text-[1.6vw] -skew-x-4 pl-[10vw]">
+              The bring awareness to this issue, we aim to make homelessness <span className="text-[1.6vw] text-[#F0544F]">everyone&apos;s problem</span>.
+               Our approach focuses on a public installation called &apos;The Landmark&apos;, that makes everybody&apos;s day a little more difficult.
+               The Landmark acts as an auditory disturbance, playing a constant irritating sound, and a countdown to the end of the installation.
+               Individuals can interact with this landmark by donating to temporarily stop the sound, and an interactive UI to learn how they can contribute to the cause.
+            </p>
+            <p className="text-[1.6vw] -skew-x-4 pl-[10vw]">
+              Furthermore, The Landmark also provides accessibility to the homeless community, providing them with information on local services and resources.
             </p>
           </div>
         </div>
