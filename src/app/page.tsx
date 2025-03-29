@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react";
+import Head from 'next/head';
 import Image from "next/image";
 import moment from "moment";
 
@@ -24,7 +25,7 @@ export default function Home() {
   const [timeLoaded, setTimeLoaded] = useState(false);
 
   useEffect(() => {
-    const startDate = new Date("2025-03-26T00:00:00Z");
+    const startDate = new Date("2025-03-29T00:00:00Z");
     const endingDate = moment(startDate).add(122000, 'm').toDate();
     setEndDate(endingDate);
   }, []);
@@ -36,7 +37,7 @@ export default function Home() {
 
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const minutes = Math.floor((distance / 60000));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       setCountdownDays(days);
@@ -60,6 +61,9 @@ export default function Home() {
 
   return (
     <div className="">
+      <Head>
+        <title>Vex</title>
+      </Head>
       <main className="flex flex-col row-start-2 items-center sm:items-start">
         <div className="relative w-full h-auto">
           <Image
@@ -76,25 +80,16 @@ export default function Home() {
         { timeLoaded && (
           <div className="outlined-text absolute bg-transparent flex flex-col text-[#FDF0D5] z-20 items-center w-full text-[4vw] font-bold pt-[10vw] -skew-x-4">
             <p>
-              <span className="hover:text-[#F0544F] transition-all">{countdownDays.toString().substring(0, 1)}</span>
-              <span className="hover:text-[#F0544F] transition-all">{countdownDays.toString().length > 1 ? countdownDays.toString().substring(1) : null}</span>
-              <span className="hover:text-[#F0544F] transition-all"> D</span>
-              <span className="hover:text-[#F0544F] transition-all">a</span>
-              <span className="hover:text-[#F0544F] transition-all">y</span>
-              <span className="hover:text-[#F0544F] transition-all">s</span>
-            </p>
-            <p>
-              <span className="hover:text-[#F0544F] transition-all">{countdownHours.toString().padStart(2, '0').substring(0, 1)}</span>
-              <span className="hover:text-[#F0544F] transition-all">{countdownHours.toString().padStart(2, '0').substring(1)}</span>
-              <span className="hover:text-[#F0544F] transition-all"> H</span>
+            <span className="hover:text-[#F0544F] transition-all">122,000</span>
+              <span className="hover:text-[#F0544F] transition-all"> P</span>
+              <span className="hover:text-[#F0544F] transition-all">e</span>
               <span className="hover:text-[#F0544F] transition-all">o</span>
-              <span className="hover:text-[#F0544F] transition-all">u</span>
-              <span className="hover:text-[#F0544F] transition-all">r</span>
-              <span className="hover:text-[#F0544F] transition-all">s</span>
+              <span className="hover:text-[#F0544F] transition-all">p</span>
+              <span className="hover:text-[#F0544F] transition-all">l</span>
+              <span className="hover:text-[#F0544F] transition-all">e</span>
             </p>
             <p>
-              <span className="hover:text-[#F0544F] transition-all">{countdownMinutes.toString().padStart(2, '0').substring(0, 1)}</span>
-              <span className="hover:text-[#F0544F] transition-all">{countdownMinutes.toString().padStart(2, '0').substring(1)}</span>
+              <span className="hover:text-[#F0544F] transition-all">{countdownMinutes.toString().padStart(2, '0')}</span>
               <span className="hover:text-[#F0544F] transition-all"> M</span>
               <span className="hover:text-[#F0544F] transition-all">i</span>
               <span className="hover:text-[#F0544F] transition-all">n</span>
@@ -104,8 +99,7 @@ export default function Home() {
               <span className="hover:text-[#F0544F] transition-all">s</span>
             </p>
             <p>
-              <span className="hover:text-[#F0544F] transition-all">{countdownSeconds.toString().padStart(2, '0').substring(0, 1)}</span>
-              <span className="hover:text-[#F0544F] transition-all">{countdownSeconds.toString().padStart(2, '0').substring(1)}</span>
+              <span className="hover:text-[#F0544F] transition-all">{countdownSeconds.toString().padStart(2, '0')}</span>
               <span className="hover:text-[#F0544F] transition-all"> S</span>
               <span className="hover:text-[#F0544F] transition-all">e</span>
               <span className="hover:text-[#F0544F] transition-all">c</span>
