@@ -44,13 +44,16 @@ export default function Home() {
       setCountdownHours(hours);
       setCountdownMinutes(minutes);
       setCountdownSeconds(seconds);
+
+      console.log("Days: ", countdownDays);
+      console.log("Hours: ", countdownHours);
       if (!timeLoaded) {
         setTimeLoaded(true);
       }
     }, 1000);
 
     return () => clearInterval(countdownInterval);
-  }, [timeLoaded, endDate]);
+  }, [timeLoaded, endDate, countdownDays, countdownHours]);
 
   const handleDonation = () => {
     setDonatedAmount(donatedAmount + dontationEntry);
